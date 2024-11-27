@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --transparent_white: hsla(0, 0%, 100%, 0.75);
+    --very_light_gray: hsl(0, 0%, 95%);
+    
+    --font-family_headings: "Big Shoulders Display", sans-serif;
+    --font-family_paragraphs: "Lexend Deca", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.wrapContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+}
+
+.column1{
+    background-color: var(--Bright_orange);
+    padding: 6%;
+}
+.column2{
+    background-color: var(--Dark_cyan);
+    padding: 6%;
+}
+h1{
+    font-family: var(--font-family_headings);
+    margin-bottom: 15%;
+    color: var(--transparent_white);
+}
+p{
+    font-family: var(--font-family_paragraphs);
+    color: var(--transparent_white);
+    font-size: 12px;
+    margin-bottom: 30%;
+
+}
+.column3{
+    background-color: var(--Very_dark_cyan);
+    padding:6%;
+}
+button{
+    padding: 5% 12%;
+    border-radius: 20px;
+    border: none;
+    font-family: var(--font-family_paragraphs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    color: var(--Bright_orange);
+}
+#btn1:hover{
+    background-color: var(--Bright_orange);
+    border: 2px solid var(--transparent_white);
+    color: var(--transparent_white);
+}
+#btn2{
+    color: var(--Dark_cyan);
+}
+#btn2:hover{
+    background-color: var(--Dark_cyan);
+    border: 2px solid var(--transparent_white);
+    color: var(--transparent_white);
+}
+#btn3{
+    color: var(--Very_dark_cyan);
+}
+#btn3:hover{
+    background-color: var(--Very_dark_cyan);
+    border: 2px solid var(--transparent_white);
+    color: var(--transparent_white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        display: block;
+        padding: 10%;
+        overflow: visible;
+    }
+    .wrapContainer{
+        display: block;
+    
+    }
+    .column1{
+        padding: 7%;
+    }
+    img{
+        margin-bottom: 5%;
+        margin-left: 0.5%;
+    }
+    h1{
+        margin-bottom: 5%;
+    }
+    p{
+        margin-bottom: 5%;
+    }
+    button{
+        padding: 4% 10%;
+    }
+}
